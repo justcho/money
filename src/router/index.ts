@@ -7,18 +7,18 @@ import Statistics from '@/views/Statistics.vue';
 
 Vue.use(VueRouter);
 
-const routes: Array<RouteConfig> = [
+const routes = [
   {
     path: '/',
-    redirect:'/money'
+    redirect: '/money'
   },
   {
 
-    path:'/money',
+    path: '/money',
     component: Money
   },
   {
-    path:'/labels',
+    path: '/labels',
     component: Labels
   },
   {
