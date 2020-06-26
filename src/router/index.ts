@@ -13,13 +13,13 @@ const routes = [
     redirect: '/money'
   },
   {
+    path: '/labels',
+    component: Labels
+  },
+  {
 
     path: '/money',
     component: Money
-  },
-  {
-    path: '/labels',
-    component: Labels
   },
   {
     path: '/statistics',
