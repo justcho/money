@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*把a标签的下划线去掉，颜色是继承他的父元素的颜色*/
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul, ol{
+  list-style: none;
+}
+button, input{
+  font: inherit;
+}
+:focus{
+  outline: none;
+}
