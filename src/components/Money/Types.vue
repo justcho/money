@@ -52,7 +52,7 @@
                 left: 0;
                 width: 100%;
                 height: 4px;
-                background: #fff;
+                background: #E92525;
             }
         }
     }
