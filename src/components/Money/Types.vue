@@ -37,7 +37,7 @@
         font-size: 24px;
 
         > li {
-            color: #fff;
+            color: white;
             width: 50%;
             height: 64px;
             display: flex;

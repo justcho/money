@@ -70,7 +70,6 @@
   @import "~@/assets/style/helper.scss";
 
   .numberPad {
-
     .output {
       @extend %clearFix;
       @extend %innerShadow;
@@ -80,6 +79,7 @@
       text-align: right;
       color: #E92525;
       height: 72px;
+      background: white;
     }
 
     .buttons {

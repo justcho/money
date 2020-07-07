@@ -46,6 +46,7 @@
 
 <style lang="scss" scoped>
     .tags {
+        background: white;
         font-size: 14px;
         padding: 16px;
         flex-grow: 1;
@@ -68,7 +69,7 @@
 
                 &.selected {
                     background: #E92525;
-                    color: #fff;
+                    color: white;
                 }
             }
         }
