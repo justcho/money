@@ -1,5 +1,5 @@
 <template>
-    <Layout class-prefix="layout">
+    <Layout class-prefix="layout">console
         <NumberPad :value.sync="record.amount" @submit="saveRecord"/>
         <div class="notes">
             <FromItem field-name="备注"
