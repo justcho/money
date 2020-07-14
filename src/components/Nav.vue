@@ -6,11 +6,11 @@
     </router-link>
     <router-link to="/money" class="item" active-class="selected" >
       <Icon name="money"/>
-      记一笔
+      记账
     </router-link>
     <router-link to="/statistics" class="item" active-class="selected">
       <Icon name="statistics"/>
-      统计
+      明细
     </router-link>
   </nav>
 </template>
