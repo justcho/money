@@ -11,7 +11,7 @@
 </template>
 
 <style scoped lang="scss">
-    ::v-deep .type-tabs-item {
+    ::v-deep {.type-tabs-item {
         background: #2D2B2B;
         &.selected {
             background: #E92525;
@@ -19,10 +19,12 @@
                 display: none;
             }
         }
+        v-deep li.interval-tabs-item{
+            height: 48px;
+        }
     }
-::v-deep li.interval-tabs-item{
-    height: 48px;
-}
+    }
+
 </style>
 
 
