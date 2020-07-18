@@ -15,7 +15,6 @@
 <script lang="ts">
   import Vue from 'vue';
   import NumberPad from '@/components/Money/NumberPad.vue';
-  import Types from '@/components/Money/Types.vue';
   import FromItem from '@/components/Money/Fromltem.vue';
   import Tags from '@/components/Money/Tags.vue';
   import {Component} from 'vue-property-decorator';
@@ -24,7 +23,7 @@
 
 
   @Component({
-    components: {Tabs,Tags, FromItem, Types, NumberPad},
+    components: {Tabs,Tags, FromItem, NumberPad},
   })
 
 
