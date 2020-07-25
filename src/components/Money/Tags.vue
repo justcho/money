@@ -32,6 +32,7 @@
 
     toggle(tag: string) {
       const index = this.selectedTags.indexOf(tag);
+
       if (index >= 0) {
         this.selectedTags.splice(index, 1);
       } else {
@@ -39,6 +40,7 @@
       }
       this.$emit('update:value', this.selectedTags);
     }
+
 
   }
 </script>

@@ -2,7 +2,7 @@
     <Layout>
         <div class="navBar">
             <span class="leftIcon"></span>
-            <span class="title">标签自定义</span>
+            <span class="title">标签管理</span>
             <span class="rightIcon"></span>
         </div>
         <div class="tags">
