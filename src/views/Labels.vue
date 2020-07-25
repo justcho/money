@@ -1,5 +1,10 @@
 <template>
     <Layout>
+        <div class="navBar">
+            <span class="leftIcon"></span>
+            <span class="title">标签自定义</span>
+            <span class="rightIcon"></span>
+        </div>
         <div class="tags">
             <router-link class="tag"
                          v-for="tag in tags" :key="tag.id"
@@ -41,6 +46,27 @@
 </script>
 
 <style lang="scss" scoped>
+    .navBar {
+        text-align: center;
+        font-size: 24px;
+        height: 64px;
+        color: white;
+        background: #2D2B2B;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        > .leftIcon {
+            width: 24px;
+            height: 24px;
+        }
+
+        > .rightIcon {
+            width: 24px;
+            height: 24px;
+        }
+    }
     .tags {
         background: #ffffff;
         font-size: 16px;
