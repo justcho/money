@@ -1,11 +1,18 @@
 <template>
     <Layout class-prefix="layout">
         <NumberPad :value.sync="record.amount" @submit="saveRecord"/>
+        <div class="createdAt">
+            <FromItem field-name="日期"
+                      type="date"
+                      placeholder="在这里输入日期"
+                      :value.sync="record.createdAt"
+            />
+        </div>
         <div class="notes">
             <FromItem field-name="备注"
                       placeholder="在这里输入备注"
                       :value.sync="record.notes"
-                      />
+            />
         </div>
         <Tags @update:value="record.tags=$event"/>
         <Tabs :data-source="recordTypeList"
@@ -37,7 +44,7 @@
     recordTypeList = recordTypeList;
 
     record: RecordItem = {
-      tags: [], notes: '', type: '-', amount: 0
+      tags: [], notes: '', type: '-', amount: 0, createdAt: new Date().toISOString()
 
     };
 
@@ -51,7 +58,7 @@
 
     saveRecord() {
       if (!this.record.tags || this.record.tags.length === 0) {
-        return window.alert('请至少选择一个标签')
+        return window.alert('请至少选择一个标签');
       }
       this.$store.commit('createRecord', this.record);
       if (this.$store.state.createRecordError === null) {
