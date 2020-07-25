@@ -76,6 +76,9 @@
     }
 
     .notes {
-        padding: 12px 0;
+        padding: 5px 0;
+    }
+    .createdAt{
+        padding: 5px 0;
     }
 </style>
