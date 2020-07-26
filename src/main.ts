@@ -15,7 +15,6 @@ Vue.component('Layout', Layout);
 Vue.component('Icon', Icon);
 
 
-
 new Vue({
   router,
   store,
@@ -27,3 +26,7 @@ window.onload = function () {
     window.scroll(0, 10000);
   }, 0);
 };
+
+if (document.documentElement.clientWidth > 500) {
+  window.alert('请使用手机打开本页面，以保证浏览效果');
+}
