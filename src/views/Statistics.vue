@@ -107,7 +107,13 @@
           type: 'category',
           data: keys,
           axisTick: {alignWithLabel: true},
-          axisLine: {lineStyle: {color: '#2D2B2B'}}
+          axisLine: {lineStyle: {color: '#2D2B2B'}},
+          axisLabel: {
+            formatter: function (value: srting, index: number) {
+              return value.substr(5);
+            }
+          }
+
         },
         yAxis: {
           type: 'value',
